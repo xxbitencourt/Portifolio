@@ -69,11 +69,6 @@ body {
     margin: 10px 0;
 }
 
-.card-price {
-    font-size: 1.2rem;
-    color: #333;
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
     .card-list {
