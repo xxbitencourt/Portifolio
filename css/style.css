@@ -1,78 +1,69 @@
-/* Resetando o estilo padrão */
-* {
+/* Reset básico */
+body, h1, h3, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Estilo global */
-body {
-    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-}
-
-/* Header */
-.header {
-    background-color: #1d1d1d;
-    padding: 10px;
+    padding: 1rem;
+  }
+  
+  header {
     text-align: center;
-}
-
-.logo-img {
-    max-width: 150px;
-}
-
-/* Card List */
-.card-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Card Image */
-.card-img {
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-}
-
-/* Card Info */
-.card-info {
-    padding: 20px;
-    text-align: center;
-}
-
-.card-title {
-    font-size: 1.5rem;
+  }
+  
+  .card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
     color: #333;
-}
-
-.card-description {
-    font-size: 1rem;
-    color: #777;
-    margin: 10px 0;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .card-list {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 1rem;
+  }
+  
+  .card span {
+    font-size: 0.8rem;
+    color: #999;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
